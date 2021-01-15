@@ -28,7 +28,7 @@ with open('precipitation.json') as file:
         for month in range(12):
             if f'-{(month + 1):02d}-'in element['date']:
                 months[month].append(element['value'])
-#print(months)
+print(f'Tryout: {locations[1]['station']}')
 
 #Calculate the sum of the precipitation over the whole year
 total_prec_per_month = list(map(sum, months))
